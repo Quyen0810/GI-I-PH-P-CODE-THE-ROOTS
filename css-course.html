@@ -1,66 +1,66 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CSS Styling & Layout - EduCourse</title>
+    <title>Thiết Kế CSS Hiện Đại - EduCourse</title>
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0" />
 </head>
 
 <body>
-    <!-- Mobile Sidebar Menu Button -->
+    <!-- Nút mở thanh bên trên thiết bị di động -->
     <button class="sidebar-menu-button">
         <span class="material-symbols-rounded">menu</span>
     </button>
     <aside class="sidebar">
-        <!-- Sidebar Header -->
+        <!-- Phần đầu thanh bên -->
         <header class="sidebar-header">
-            <a href="#" class="header-logo">
+            <a href="index.html" class="header-logo">
                 <img src="logo.png" alt="EduCourse" />
             </a>
             <button class="sidebar-toggler">
                 <span class="material-symbols-rounded">chevron_left</span>
             </button>
         </header>
-        <nav class="sidebar-nav">         
-            <!-- Primary Top Nav -->
+        <nav class="sidebar-nav">
+            <!-- Điều hướng chính -->
             <ul class="nav-list primary-nav">
-                <!-- Search Form -->
+                <!-- Form tìm kiếm -->
                 <form action="#" class="search-form">
                     <span class="material-symbols-rounded">search</span>
-                    <input type="search" placeholder="Search..." required />
+                    <input type="search" placeholder="Tìm kiếm..." required />
                 </form>
                 <li class="nav-item">
                     <a href="index.html" class="nav-link">
                         <span class="material-symbols-rounded">home</span>
-                        <span class="nav-label">Home</span>
+                        <span class="nav-label">Trang Chủ</span>
                     </a>
                     <ul class="dropdown-menu">
-                        <li class="nav-item"><a class="nav-link dropdown-title">Home</a></li>
+                        <li class="nav-item"><a class="nav-link dropdown-title">Trang Chủ</a></li>
                     </ul>
                 </li>
                 <li class="nav-item">
                     <a href="about.html" class="nav-link">
                         <span class="material-symbols-rounded">local_library</span>
-                        <span class="nav-label">About Us</span>
+                        <span class="nav-label">Giới Thiệu</span>
                     </a>
                     <ul class="dropdown-menu">
-                        <li class="nav-item"><a class="nav-link dropdown-title">About Us</a></li>
+                        <li class="nav-item"><a class="nav-link dropdown-title">Giới Thiệu</a></li>
                     </ul>
                 </li>
-                <!-- Dropdown -->
+                <!-- Mục có menu thả xuống -->
                 <li class="nav-item dropdown-container">
                     <a href="courses.html" class="nav-link dropdown-toggle">
                         <span class="material-symbols-rounded">book</span>
-                        <span class="nav-label">Courses</span>
+                        <span class="nav-label">Khóa Học</span>
                         <span class="dropdown-icon material-symbols-rounded">keyboard_arrow_down</span>
                     </a>
-                    <!-- Dropdown Menu -->
+                    <!-- Danh sách thả xuống -->
                     <ul class="dropdown-menu">
-                        <li class="nav-item"><a class="nav-link dropdown-title">Courses</a></li>
+                        <li class="nav-item"><a class="nav-link dropdown-title">Khóa Học</a></li>
                         <li class="nav-item"><a href="html-course.html" class="nav-link dropdown-link">HTML</a></li>
                         <li class="nav-item"><a href="css-course.html" class="nav-link dropdown-link">CSS</a></li>
                         <li class="nav-item"><a href="javascript-course.html" class="nav-link dropdown-link">JavaScript</a></li>
@@ -78,156 +78,186 @@
                 <li class="nav-item">
                     <a href="pricing.html" class="nav-link">
                         <span class="material-symbols-rounded">payments</span>
-                        <span class="nav-label">Pricing</span>
+                        <span class="nav-label">Bảng Giá</span>
                     </a>
                     <ul class="dropdown-menu">
-                        <li class="nav-item"><a class="nav-link dropdown-title">Pricing</a></li>
+                        <li class="nav-item"><a class="nav-link dropdown-title">Bảng Giá</a></li>
                     </ul>
                 </li>
                 <li class="nav-item">
                     <a href="faq.html" class="nav-link">
                         <span class="material-symbols-rounded">help</span>
-                        <span class="nav-label">FAQ</span>
+                        <span class="nav-label">Câu Hỏi</span>
                     </a>
                     <ul class="dropdown-menu">
-                        <li class="nav-item"><a class="nav-link dropdown-title">FAQ</a></li>
+                        <li class="nav-item"><a class="nav-link dropdown-title">Câu Hỏi</a></li>
                     </ul>
                 </li>
                 <li class="nav-item">
                     <a href="contact.html" class="nav-link">
                         <span class="material-symbols-rounded">contact_mail</span>
-                        <span class="nav-label">Contact</span>
+                        <span class="nav-label">Liên Hệ</span>
                     </a>
                     <ul class="dropdown-menu">
-                        <li class="nav-item"><a class="nav-link dropdown-title">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link dropdown-title">Liên Hệ</a></li>
                     </ul>
                 </li>
                 <li class="nav-item">
                     <a href="login.html" class="nav-link">
                         <span class="material-symbols-rounded">login</span>
-                        <span class="nav-label">Login</span>
+                        <span class="nav-label">Đăng Nhập</span>
                     </a>
                     <ul class="dropdown-menu">
-                        <li class="nav-item"><a class="nav-link dropdown-title">Login</a></li>
+                        <li class="nav-item"><a class="nav-link dropdown-title">Đăng Nhập</a></li>
                     </ul>
                 </li>
                 <li class="nav-item">
                     <a href="dashboard.html" class="nav-link">
                         <span class="material-symbols-rounded">dashboard</span>
-                        <span class="nav-label">Dashboard</span>
+                        <span class="nav-label">Bảng Điều Khiển</span>
                     </a>
                     <ul class="dropdown-menu">
-                        <li class="nav-item"><a class="nav-link dropdown-title">Dashboard</a></li>
+                        <li class="nav-item"><a class="nav-link dropdown-title">Bảng Điều Khiển</a></li>
                     </ul>
                 </li>
             </ul>
         </nav>
     </aside>
-    
-    <!-- Main Content -->
+
+    <!-- Nội dung chính -->
     <main class="main-content">
         <div class="content-container">
-            <!-- Course Header -->
+            <!-- Tiêu đề khóa học -->
             <div class="page-header">
-                <h1 class="page-title">CSS Styling & Layout</h1>
-                <p class="page-subtitle">Master modern CSS techniques and responsive design</p>
+                <span class="section-badge">
+                    <span class="material-symbols-rounded">palette</span>
+                    Thiết kế giao diện chuyên nghiệp
+                </span>
+                <h1 class="page-title">Thiết kế CSS hiện đại</h1>
+                <p class="page-subtitle">Nắm vững Flexbox, Grid, animation và kỹ thuật responsive để tạo nên trải nghiệm người dùng đẳng cấp.</p>
             </div>
 
-            <!-- Course Overview -->
+            <!-- Tổng quan khóa học -->
             <div class="grid grid-2">
                 <div class="card">
-                    <h2 class="card-title">Course Overview</h2>
+                    <h2 class="card-title">Tổng quan khóa học</h2>
                     <div class="card-content">
-                        <p>CSS (Cascading Style Sheets) brings your HTML to life with beautiful styling and layouts. Learn modern CSS techniques including Flexbox, Grid, animations, and responsive design principles.</p>
-                        
-                        <h3>What You'll Learn:</h3>
+                        <p>CSS giúp giao diện của bạn trở nên sống động. Khóa học tập trung vào các kỹ thuật CSS hiện đại, hướng dẫn cách xây dựng bố cục linh hoạt, phối màu chuyên nghiệp và tối ưu trải nghiệm trên mọi thiết bị.</p>
+
+                        <h3>Bạn sẽ học được:</h3>
                         <ul>
-                            <li>CSS fundamentals and selectors</li>
-                            <li>Box model and positioning</li>
-                            <li>Flexbox and CSS Grid layouts</li>
-                            <li>Responsive design and media queries</li>
-                            <li>CSS animations and transitions</li>
-                            <li>CSS preprocessors (SASS/SCSS)</li>
+                            <li>Cú pháp CSS và các bộ chọn hiệu quả</li>
+                            <li>Hộp mô hình, căn chỉnh và xử lý khoảng cách</li>
+                            <li>Flexbox, CSS Grid và kết hợp hai hệ thống bố cục</li>
+                            <li>Thiết kế responsive với media query</li>
+                            <li>Hiệu ứng chuyển động với transition &amp; animation</li>
+                            <li>Làm việc với SASS/SCSS để tăng tốc quy trình</li>
                         </ul>
                     </div>
                 </div>
-                
+
                 <div class="card">
-                    <h2 class="card-title">Course Details</h2>
+                    <h2 class="card-title">Thông tin chi tiết</h2>
                     <div class="card-content">
                         <div style="margin-bottom: 15px;">
-                            <strong>Duration:</strong> 6 weeks<br>
-                            <strong>Level:</strong> Intermediate<br>
-                            <strong>Price:</strong> $149<br>
-                            <strong>Instructor:</strong> Michael Chen<br>
-                            <strong>Students:</strong> 1,800+ enrolled
+                            <strong>Thời lượng:</strong> 6 tuần<br>
+                            <strong>Cấp độ:</strong> Trung cấp<br>
+                            <strong>Học phí:</strong> $149<br>
+                            <strong>Giảng viên:</strong> Michael Chen<br>
+                            <strong>Học viên:</strong> Hơn 1.800 người đã tham gia
                         </div>
-                        
+
                         <div style="margin-top: 20px;">
-                            <a href="login.html" class="btn btn-primary">Enroll Now</a>
-                            <a href="pricing.html" class="btn btn-secondary" style="margin-left: 10px;">View Pricing</a>
+                            <a href="login.html" class="btn btn-primary">Đăng ký ngay</a>
+                            <a href="pricing.html" class="btn btn-secondary" style="margin-left: 10px;">Xem bảng giá</a>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <!-- Course Curriculum -->
+            <!-- Chương trình khóa học -->
             <div class="card">
-                <h2 class="card-title">Course Curriculum</h2>
+                <h2 class="card-title">Chương trình học</h2>
                 <div class="card-content">
                     <div style="margin-bottom: 30px;">
-                        <h3>Week 1-2: CSS Fundamentals</h3>
+                        <h3>Tuần 1-2: Nền tảng CSS</h3>
                         <ul>
-                            <li>CSS syntax and selectors</li>
-                            <li>Box model and display properties</li>
-                            <li>Colors, backgrounds, and typography</li>
-                            <li>Positioning: static, relative, absolute, fixed</li>
-                            <li>Floats and clearfix techniques</li>
+                            <li>Cú pháp CSS, bộ chọn và độ ưu tiên</li>
+                            <li>Hộp mô hình, thuộc tính hiển thị và căn chỉnh</li>
+                            <li>Màu sắc, phông chữ và quản lý nền</li>
+                            <li>Các kỹ thuật định vị phần tử</li>
+                            <li>Giải quyết bài toán float và clear</li>
                         </ul>
                     </div>
-                    
+
                     <div style="margin-bottom: 30px;">
-                        <h3>Week 3-4: Modern Layout Systems</h3>
+                        <h3>Tuần 3-4: Bố cục hiện đại</h3>
                         <ul>
-                            <li>Flexbox: flex containers and items</li>
-                            <li>CSS Grid: grid containers and tracks</li>
-                            <li>Combining Flexbox and Grid</li>
-                            <li>Layout patterns and best practices</li>
-                            <li>Cross-browser compatibility</li>
+                            <li>Flexbox: trục, căn chỉnh và sắp xếp</li>
+                            <li>CSS Grid: lưới hàng cột, vùng và template</li>
+                            <li>Kết hợp Flexbox &amp; Grid trong dự án thực tế</li>
+                            <li>Mẫu bố cục tái sử dụng và best practice</li>
+                            <li>Xử lý tương thích đa trình duyệt</li>
                         </ul>
                     </div>
-                    
-                    <div style="margin-bottom: 30px;">
-                        <h3>Week 5-6: Advanced CSS</h3>
+
+                    <div id="chuong-trinh-responsive" style="margin-bottom: 30px;">
+                        <h3>Tuần 5-6: Hiệu ứng và tối ưu</h3>
                         <ul>
-                            <li>Responsive design and media queries</li>
-                            <li>CSS animations and keyframes</li>
-                            <li>Transitions and transforms</li>
-                            <li>CSS preprocessors (SASS/SCSS)</li>
-                            <li>CSS methodologies (BEM)</li>
+                            <li>Media query và chiến lược responsive</li>
+                            <li>Tạo animation mượt mà với keyframe</li>
+                            <li>Bộ lọc, shadow và hiệu ứng chuyên sâu</li>
+                            <li>Sử dụng SASS/SCSS và tổ chức mã CSS lớn</li>
+                            <li>Tối ưu hiệu năng hiển thị và debug</li>
                         </ul>
                     </div>
                 </div>
             </div>
 
-            <!-- Prerequisites -->
+            <!-- Dự án thực hành -->
             <div class="card">
-                <h2 class="card-title">Prerequisites</h2>
+                <h2 class="card-title">Dự án áp dụng</h2>
+                <div class="grid grid-3">
+                    <div class="card">
+                        <h3 class="card-title">Landing Page sản phẩm</h3>
+                        <div class="card-content">
+                            <p>Thiết kế landing page hoàn chỉnh với bố cục hero, testimonial và bảng giá responsive.</p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <h3 class="card-title">Dashboard quản trị</h3>
+                        <div class="card-content">
+                            <p>Kết hợp Flexbox và Grid để xây dựng bảng điều khiển với biểu đồ, thẻ thống kê và bảng dữ liệu.</p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <h3 class="card-title">Thư viện hiệu ứng</h3>
+                        <div class="card-content">
+                            <p>Tạo bộ hiệu ứng animation và transition tái sử dụng cho toàn bộ website.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Yêu cầu tiên quyết -->
+            <div class="card">
+                <h2 class="card-title">Yêu cầu đầu vào</h2>
                 <div class="card-content">
-                    <p>Before taking this course, you should have:</p>
+                    <p>Bạn cần hoàn thành khóa HTML cơ bản hoặc có kiến thức tương đương. Ngoài ra hãy chuẩn bị:</p>
                     <ul>
-                        <li>Basic HTML knowledge (or completion of our HTML Fundamentals course)</li>
-                        <li>Understanding of web browsers and developer tools</li>
-                        <li>A text editor and web browser</li>
+                        <li>Máy tính với trình duyệt cập nhật</li>
+                        <li>Trình soạn thảo mã nguồn (Visual Studio Code)</li>
+                        <li>Kinh nghiệm thao tác thư mục cơ bản</li>
+                        <li>Tinh thần sáng tạo và sẵn sàng thử nghiệm</li>
                     </ul>
                 </div>
             </div>
-
-           
         </div>
     </main>
 
-    <!-- Script -->
+    <!-- Tệp script -->
     <script src="js/script.js"></script>
 </body>
 
