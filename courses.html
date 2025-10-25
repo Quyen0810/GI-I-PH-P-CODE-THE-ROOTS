@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Khóa Học - EduCourse</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0" />
+</head>
+
+<body>
+    <!-- Mobile Sidebar Menu Button -->
+    <button class="sidebar-menu-button">
+        <span class="material-symbols-rounded">menu</span>
+    </button>
+    <aside class="sidebar">
+        <!-- Sidebar Header -->
+        <header class="sidebar-header">
+            <a href="#" class="header-logo">
+                <img src="logo.png" alt="EduCourse" />
+            </a>
+            <button class="sidebar-toggler">
+                <span class="material-symbols-rounded">chevron_left</span>
+            </button>
+        </header>
+        <nav class="sidebar-nav">         
+            <!-- Primary Top Nav -->
+            <ul class="nav-list primary-nav">
+                <!-- Search Form -->
+                <form action="#" class="search-form">
+                    <span class="material-symbols-rounded">search</span>
+                    <input type="search" placeholder="Tìm kiếm..." required />
+                </form>
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">
+                        <span class="material-symbols-rounded">home</span>
+                        <span class="nav-label">Trang Chủ</span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li class="nav-item"><a class="nav-link dropdown-title">Trang Chủ</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">
+                        <span class="material-symbols-rounded">local_library</span>
+                        <span class="nav-label">Giới Thiệu</span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li class="nav-item"><a class="nav-link dropdown-title">Giới Thiệu</a></li>
+                    </ul>
+                </li>
+                <!-- Dropdown -->
+                <li class="nav-item dropdown-container">
+                    <a href="courses.html" class="nav-link dropdown-toggle">
+                        <span class="material-symbols-rounded">book</span>
+                        <span class="nav-label">Khóa Học</span>
+                        <span class="dropdown-icon material-symbols-rounded">keyboard_arrow_down</span>
+                    </a>
+                    <!-- Dropdown Menu -->
+                    <ul class="dropdown-menu">
+                        <li class="nav-item"><a class="nav-link dropdown-title">Khóa Học</a></li>
+                        <li class="nav-item"><a href="html-course.html" class="nav-link dropdown-link">HTML</a></li>
+                        <li class="nav-item"><a href="css-course.html" class="nav-link dropdown-link">CSS</a></li>
+                        <li class="nav-item"><a href="javascript-course.html" class="nav-link dropdown-link">JavaScript</a></li>
+                    </ul>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="blog.html" class="nav-link">
+                        <span class="material-symbols-rounded">article</span>
+                        <span class="nav-label">Blog</span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li class="nav-item"><a class="nav-link dropdown-title">Blog</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="pricing.html" class="nav-link">
+                        <span class="material-symbols-rounded">payments</span>
+                        <span class="nav-label">Bảng Giá</span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li class="nav-item"><a class="nav-link dropdown-title">Bảng Giá</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="faq.html" class="nav-link">
+                        <span class="material-symbols-rounded">help</span>
+                        <span class="nav-label">Câu Hỏi</span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li class="nav-item"><a class="nav-link dropdown-title">Câu Hỏi</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">
+                        <span class="material-symbols-rounded">contact_mail</span>
+                        <span class="nav-label">Liên Hệ</span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li class="nav-item"><a class="nav-link dropdown-title">Liên Hệ</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="login.html" class="nav-link">
+                        <span class="material-symbols-rounded">login</span>
+                        <span class="nav-label">Đăng Nhập</span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li class="nav-item"><a class="nav-link dropdown-title">Đăng Nhập</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="dashboard.html" class="nav-link">
+                        <span class="material-symbols-rounded">dashboard</span>
+                        <span class="nav-label">Bảng Điều Khiển</span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li class="nav-item"><a class="nav-link dropdown-title">Bảng Điều Khiển</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </aside>
+    
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="content-container">
+            <!-- Page Header -->
+            <div class="page-header">
+                <h1 class="page-title">Tất Cả Khóa Học</h1>
+                <p class="page-subtitle">Thành thạo phát triển web với danh mục khóa học toàn diện của chúng tôi</p>
+            </div>
+
+            <!-- Course Categories -->
+            <div class="card">
+                <h2 class="card-title">Danh Mục Khóa Học</h2>
+                <div class="grid grid-3">
+                    <div class="course-card">
+                        <div class="course-image">
+                            <span class="material-symbols-rounded">code</span>
+                        </div>
+                        <div class="course-content">
+                            <h3 class="course-title">Cơ Bản HTML</h3>
+                            <p class="course-description">Học các khối xây dựng của phát triển web với HTML5. Thành thạo đánh dấu ngữ nghĩa, biểu mẫu và khả năng tiếp cận.</p>
+                            <div class="course-meta">
+                                <span class="course-duration">4 tuần</span>
+                                <span class="course-price">$99</span>
+                            </div>
+                            <a href="html-course.html" class="btn btn-primary">Xem Khóa Học</a>
+                        </div>
+                    </div>
+                    
+                    <div class="course-card">
+                        <div class="course-image">
+                            <span class="material-symbols-rounded">palette</span>
+                        </div>
+                        <div class="course-content">
+                            <h3 class="course-title">CSS Styling & Layout</h3>
+                            <p class="course-description">Thành thạo các kỹ thuật CSS hiện đại, Flexbox, Grid, animation và nguyên tắc thiết kế responsive.</p>
+                            <div class="course-meta">
+                                <span class="course-duration">6 tuần</span>
+                                <span class="course-price">$149</span>
+                            </div>
+                            <a href="css-course.html" class="btn btn-primary">Xem Khóa Học</a>
+                        </div>
+                    </div>
+                    
+                    <div class="course-card">
+                        <div class="course-image">
+                            <span class="material-symbols-rounded">javascript</span>
+                        </div>
+                        <div class="course-content">
+                            <h3 class="course-title">Lập Trình JavaScript</h3>
+                            <p class="course-description">Xây dựng các ứng dụng web tương tác với JavaScript, ES6+, thao tác DOM và các framework hiện đại.</p>
+                            <div class="course-meta">
+                                <span class="course-duration">8 tuần</span>
+                                <span class="course-price">$199</span>
+                            </div>
+                            <a href="javascript-course.html" class="btn btn-primary">Xem Khóa Học</a>
+                        </div>
+                    </div>
+
+                    <div class="course-card">
+                        <div class="course-image">
+                            <span class="material-symbols-rounded">api</span>
+                        </div>
+                        <div class="course-content">
+                            <h3 class="course-title">React Development</h3>
+                            <p class="course-description">Learn React.js from basics to advanced concepts including hooks, state management, and routing.</p>
+                            <div class="course-meta">
+                                <span class="course-duration">10 weeks</span>
+                                <span class="course-price">$249</span>
+                            </div>
+                            <a href="#" class="btn btn-primary">View Course</a>
+                        </div>
+                    </div>
+
+                    <div class="course-card">
+                        <div class="course-image">
+                            <span class="material-symbols-rounded">storage</span>
+                        </div>
+                        <div class="course-content">
+                            <h3 class="course-title">Node.js Backend</h3>
+                            <p class="course-description">Build server-side applications with Node.js, Express, databases, and RESTful APIs.</p>
+                            <div class="course-meta">
+                                <span class="course-duration">8 weeks</span>
+                                <span class="course-price">$199</span>
+                            </div>
+                            <a href="#" class="btn btn-primary">View Course</a>
+                        </div>
+                    </div>
+
+                    <div class="course-card">
+                        <div class="course-image">
+                            <span class="material-symbols-rounded">database</span>
+                        </div>
+                        <div class="course-content">
+                            <h3 class="course-title">Database Design</h3>
+                            <p class="course-description">Master database design, SQL queries, MongoDB, and data modeling for web applications.</p>
+                            <div class="course-meta">
+                                <span class="course-duration">6 weeks</span>
+                                <span class="course-price">$149</span>
+                            </div>
+                            <a href="#" class="btn btn-primary">View Course</a>
+                        </div>
+                    </div>
+
+                    <div class="course-card">
+                        <div class="course-image">
+                            <span class="material-symbols-rounded">security</span>
+                        </div>
+                        <div class="course-content">
+                            <h3 class="course-title">Web Security</h3>
+                            <p class="course-description">Learn web security best practices, authentication, authorization, and common vulnerabilities.</p>
+                            <div class="course-meta">
+                                <span class="course-duration">4 weeks</span>
+                                <span class="course-price">$99</span>
+                            </div>
+                            <a href="#" class="btn btn-primary">View Course</a>
+                        </div>
+                    </div>
+
+                    <div class="course-card">
+                        <div class="course-image">
+                            <span class="material-symbols-rounded">speed</span>
+                        </div>
+                        <div class="course-content">
+                            <h3 class="course-title">Performance Optimization</h3>
+                            <p class="course-description">Optimize web applications for speed, SEO, and user experience with modern techniques.</p>
+                            <div class="course-meta">
+                                <span class="course-duration">4 weeks</span>
+                                <span class="course-price">$99</span>
+                            </div>
+                            <a href="#" class="btn btn-primary">View Course</a>
+                        </div>
+                    </div>
+
+                    <div class="course-card">
+                        <div class="course-image">
+                            <span class="material-symbols-rounded">devices</span>
+                        </div>
+                        <div class="course-content">
+                            <h3 class="course-title">Mobile Development</h3>
+                            <p class="course-description">Build responsive mobile-first applications using modern frameworks and best practices.</p>
+                            <div class="course-meta">
+                                <span class="course-duration">6 weeks</span>
+                                <span class="course-price">$149</span>
+                            </div>
+                            <a href="#" class="btn btn-primary">View Course</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Learning Path -->
+            <div class="card">
+                <h2 class="card-title">Đường Dẫn Học Tập Được Khuyến Nghị</h2>
+                <div class="card-content">
+                    <p>Mới bắt đầu phát triển web? Hãy làm theo đường dẫn học tập được khuyến nghị của chúng tôi để xây dựng kỹ năng của bạn một cách tiến bộ:</p>
+                    <ol style="margin-top: 20px; line-height: 2;">
+                        <li><strong>Cơ Bản HTML</strong> - Bắt đầu với những điều cơ bản về cấu trúc web</li>
+                        <li><strong>CSS Styling & Layout</strong> - Học cách tạo kiểu và bố cục trang</li>
+                        <li><strong>Lập Trình JavaScript</strong> - Thêm tính tương tác vào trang web</li>
+                        <li><strong>Phát Triển React</strong> - Xây dựng giao diện người dùng hiện đại</li>
+                        <li><strong>Backend Node.js</strong> - Tạo ứng dụng phía máy chủ</li>
+                        <li><strong>Thiết Kế Cơ Sở Dữ Liệu</strong> - Lưu trữ và quản lý dữ liệu hiệu quả</li>
+                    </ol>
+                </div>
+            </div>
+
+            <!-- Course Features -->
+            <div class="grid grid-2">
+                <div class="card">
+                    <h2 class="card-title">Bạn Sẽ Nhận Được Gì</h2>
+                    <div class="card-content">
+                        <ul>
+                            <li>Video bài học chất lượng cao</li>
+                            <li>Bài tập lập trình thực hành</li>
+                            <li>Dự án thực tế</li>
+                            <li>Đánh giá code và phản hồi</li>
+                            <li>Chứng chỉ hoàn thành</li>
+                            <li>Truy cập trọn đời tài liệu</li>
+                            <li>Hỗ trợ cộng đồng</li>
+                            <li>Hướng dẫn nghề nghiệp</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <h2 class="card-title">Sẵn Sàng Bắt Đầu?</h2>
+                    <div class="card-content">
+                        <p>Tham gia cùng hàng nghìn sinh viên đã thay đổi sự nghiệp với các khóa học của chúng tôi. Bắt đầu hành trình phát triển web của bạn ngay hôm nay!</p>
+                        <div style="margin-top: 20px;">
+                            <a href="login.html" class="btn btn-primary">Đăng Ký Ngay</a>
+                            <a href="pricing.html" class="btn btn-secondary" style="margin-left: 10px;">Xem Bảng Giá</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Script -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>

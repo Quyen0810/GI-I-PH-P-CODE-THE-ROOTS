@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Câu Hỏi Thường Gặp - EduCourse</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0" />
+</head>
+
+<body>
+    <!-- Mobile Sidebar Menu Button -->
+    <button class="sidebar-menu-button">
+        <span class="material-symbols-rounded">menu</span>
+    </button>
+    <aside class="sidebar">
+        <!-- Sidebar Header -->
+        <header class="sidebar-header">
+            <a href="#" class="header-logo">
+                <img src="logo.png" alt="EduCourse" />
+            </a>
+            <button class="sidebar-toggler">
+                <span class="material-symbols-rounded">chevron_left</span>
+            </button>
+        </header>
+        <nav class="sidebar-nav">         
+            <!-- Primary Top Nav -->
+            <ul class="nav-list primary-nav">
+                <!-- Search Form -->
+                <form action="#" class="search-form">
+                    <span class="material-symbols-rounded">search</span>
+                    <input type="search" placeholder="Tìm kiếm..." required />
+                </form>
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">
+                        <span class="material-symbols-rounded">home</span>
+                        <span class="nav-label">Home</span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li class="nav-item"><a class="nav-link dropdown-title">Home</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">
+                        <span class="material-symbols-rounded">local_library</span>
+                        <span class="nav-label">About Us</span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li class="nav-item"><a class="nav-link dropdown-title">About Us</a></li>
+                    </ul>
+                </li>
+                <!-- Dropdown -->
+                <li class="nav-item dropdown-container">
+                    <a href="courses.html" class="nav-link dropdown-toggle">
+                        <span class="material-symbols-rounded">book</span>
+                        <span class="nav-label">Courses</span>
+                        <span class="dropdown-icon material-symbols-rounded">keyboard_arrow_down</span>
+                    </a>
+                    <!-- Dropdown Menu -->
+                    <ul class="dropdown-menu">
+                        <li class="nav-item"><a class="nav-link dropdown-title">Courses</a></li>
+                        <li class="nav-item"><a href="html-course.html" class="nav-link dropdown-link">HTML</a></li>
+                        <li class="nav-item"><a href="css-course.html" class="nav-link dropdown-link">CSS</a></li>
+                        <li class="nav-item"><a href="javascript-course.html" class="nav-link dropdown-link">JavaScript</a></li>
+                    </ul>
+                </li>
+              
+                <li class="nav-item">
+                    <a href="blog.html" class="nav-link">
+                        <span class="material-symbols-rounded">article</span>
+                        <span class="nav-label">Blog</span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li class="nav-item"><a class="nav-link dropdown-title">Blog</a></li>
+                    </ul>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="pricing.html" class="nav-link">
+                        <span class="material-symbols-rounded">payments</span>
+                        <span class="nav-label">Pricing</span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li class="nav-item"><a class="nav-link dropdown-title">Pricing</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="faq.html" class="nav-link">
+                        <span class="material-symbols-rounded">help</span>
+                        <span class="nav-label">FAQ</span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li class="nav-item"><a class="nav-link dropdown-title">FAQ</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">
+                        <span class="material-symbols-rounded">contact_mail</span>
+                        <span class="nav-label">Contact</span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li class="nav-item"><a class="nav-link dropdown-title">Contact</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="login.html" class="nav-link">
+                        <span class="material-symbols-rounded">login</span>
+                        <span class="nav-label">Login</span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li class="nav-item"><a class="nav-link dropdown-title">Login</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="dashboard.html" class="nav-link">
+                        <span class="material-symbols-rounded">dashboard</span>
+                        <span class="nav-label">Dashboard</span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li class="nav-item"><a class="nav-link dropdown-title">Dashboard</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </aside>
+    
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="content-container">
+            <!-- Page Header -->
+            <div class="page-header">
+                <h1 class="page-title">Câu Hỏi Thường Gặp</h1>
+                <p class="page-subtitle">Tìm câu trả lời cho các câu hỏi phổ biến về khóa học và nền tảng của chúng tôi</p>
+            </div>
+
+            <!-- FAQ Categories -->
+            <div class="card">
+                <h2 class="card-title">Câu Hỏi Chung</h2>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>EduCourse là gì?</span>
+                        <span class="material-symbols-rounded">expand_more</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>EduCourse là một nền tảng học trực tuyến chuyên về giáo dục phát triển web. Chúng tôi cung cấp các khóa học toàn diện về HTML, CSS, JavaScript và các công nghệ web hiện đại, được thiết kế để giúp sinh viên xây dựng kỹ năng thực tế và thăng tiến sự nghiệp.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Tôi có cần kinh nghiệm lập trình trước đó không?</span>
+                        <span class="material-symbols-rounded">expand_more</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Không cần kinh nghiệm lập trình trước đó cho các khóa học người mới bắt đầu của chúng tôi. Chúng tôi bắt đầu từ những điều cơ bản và dần dần xây dựng lên các khái niệm nâng cao hơn. Tuy nhiên, có kỹ năng máy tính cơ bản và quen thuộc với trình duyệt web sẽ hữu ích.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Tôi có thể truy cập tài liệu khóa học trong bao lâu?</span>
+                        <span class="material-symbols-rounded">expand_more</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Bạn có quyền truy cập trọn đời vào tất cả tài liệu khóa học sau khi đăng ký. Điều này bao gồm video bài học, tài nguyên có thể tải xuống và bất kỳ cập nhật nào trong tương lai cho nội dung khóa học.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Các khóa học có tự học không?</span>
+                        <span class="material-symbols-rounded">expand_more</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Có, tất cả các khóa học của chúng tôi đều tự học. Bạn có thể học theo tốc độ của riêng mình và truy cập tài liệu bất cứ khi nào thuận tiện cho bạn. Chúng tôi cũng cung cấp các buổi học trực tiếp và giờ làm việc để hỗ trợ thêm.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Technical Questions -->
+            <div class="card">
+                <h2 class="card-title">Technical Questions</h2>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>What software do I need to take the courses?</span>
+                        <span class="material-symbols-rounded">expand_more</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>You only need a computer with internet access and a modern web browser. We'll guide you through setting up free text editors like Visual Studio Code. No expensive software is required.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Can I take courses on mobile devices?</span>
+                        <span class="material-symbols-rounded">expand_more</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>While you can watch video lessons on mobile devices, we recommend using a computer for hands-on coding exercises and projects. Our platform is optimized for desktop and tablet use.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>What if I encounter technical issues?</span>
+                        <span class="material-symbols-rounded">expand_more</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Our technical support team is available to help with any issues you encounter. You can reach out through our support portal, email, or live chat during business hours.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Payment Questions -->
+            <div class="card">
+                <h2 class="card-title">Thanh Toán & Hóa Đơn</h2>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Bạn chấp nhận phương thức thanh toán nào?</span>
+                        <span class="material-symbols-rounded">expand_more</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Chúng tôi chấp nhận tất cả các thẻ tín dụng chính (Visa, MasterCard, American Express), PayPal, chuyển khoản ngân hàng và tiền điện tử. Chúng tôi cũng cung cấp các gói trả góp cho các giao dịch lớn hơn.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Bạn có cung cấp hoàn tiền không?</span>
+                        <span class="material-symbols-rounded">expand_more</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Có, chúng tôi cung cấp đảm bảo hoàn tiền trong 30 ngày cho tất cả các khóa học và đăng ký. Nếu bạn không hài lòng, hãy liên hệ với chúng tôi trong vòng 30 ngày để được hoàn tiền đầy đủ.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Có phí ẩn nào không?</span>
+                        <span class="material-symbols-rounded">expand_more</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Không có phí ẩn. Giá bạn thấy là giá bạn trả. Tất cả thuế đều được bao gồm trong giá hiển thị.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Bạn có cung cấp giảm giá cho sinh viên không?</span>
+                        <span class="material-symbols-rounded">expand_more</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Có, chúng tôi cung cấp giảm giá 20% cho sinh viên có thẻ sinh viên hợp lệ. Liên hệ với đội ngũ hỗ trợ của chúng tôi để xác minh để nhận mã giảm giá.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Career Questions -->
+            <div class="card">
+                <h2 class="card-title">Nghề Nghiệp & Hỗ Trợ</h2>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Bạn có cung cấp hỗ trợ tìm việc không?</span>
+                        <span class="material-symbols-rounded">expand_more</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Có, các gói Professional và Enterprise của chúng tôi bao gồm hỗ trợ tìm việc, đánh giá CV, chuẩn bị phỏng vấn và kết nối với mạng lưới đối tác tuyển dụng của chúng tôi.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Chứng chỉ có được nhà tuyển dụng công nhận không?</span>
+                        <span class="material-symbols-rounded">expand_more</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Chứng chỉ của chúng tôi thể hiện việc hoàn thành các khóa học toàn diện và được nhiều nhà tuyển dụng trong ngành công nghệ công nhận. Chúng thể hiện cam kết học tập và phát triển kỹ năng của bạn.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Làm thế nào tôi có thể được giúp đỡ với bài tập?</span>
+                        <span class="material-symbols-rounded">expand_more</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Chúng tôi cung cấp nhiều kênh hỗ trợ: diễn đàn cộng đồng, giờ làm việc của giảng viên, nhóm học tập đồng nghiệp và phản hồi trực tiếp từ giảng viên. Các gói cấp cao hơn bao gồm hỗ trợ ưu tiên và cố vấn 1-1.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact Support -->
+            <div class="card">
+                <h2 class="card-title">Vẫn Còn Câu Hỏi?</h2>
+                <div class="card-content" style="text-align: center;">
+                    <p>Không thể tìm thấy câu trả lời bạn đang tìm? Đội ngũ hỗ trợ của chúng tôi sẵn sàng giúp đỡ!</p>
+                    <div style="margin-top: 20px;">
+                        <a href="contact.html" class="btn btn-primary">Liên Hệ Hỗ Trợ</a>
+                        <a href="login.html" class="btn btn-secondary" style="margin-left: 10px;">Bắt Đầu</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Script -->
+    <script src="js/script.js"></script>
+    <script>
+        // FAQ Toggle Functionality
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', () => {
+                const faqItem = question.parentElement;
+                const isActive = faqItem.classList.contains('active');
+                
+                // Close all FAQ items
+                document.querySelectorAll('.faq-item').forEach(item => {
+                    item.classList.remove('active');
+                });
+                
+                // Open clicked item if it wasn't active
+                if (!isActive) {
+                    faqItem.classList.add('active');
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

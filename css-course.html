@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Styling & Layout - EduCourse</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0" />
+</head>
+
+<body>
+    <!-- Mobile Sidebar Menu Button -->
+    <button class="sidebar-menu-button">
+        <span class="material-symbols-rounded">menu</span>
+    </button>
+    <aside class="sidebar">
+        <!-- Sidebar Header -->
+        <header class="sidebar-header">
+            <a href="#" class="header-logo">
+                <img src="logo.png" alt="EduCourse" />
+            </a>
+            <button class="sidebar-toggler">
+                <span class="material-symbols-rounded">chevron_left</span>
+            </button>
+        </header>
+        <nav class="sidebar-nav">         
+            <!-- Primary Top Nav -->
+            <ul class="nav-list primary-nav">
+                <!-- Search Form -->
+                <form action="#" class="search-form">
+                    <span class="material-symbols-rounded">search</span>
+                    <input type="search" placeholder="Search..." required />
+                </form>
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">
+                        <span class="material-symbols-rounded">home</span>
+                        <span class="nav-label">Home</span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li class="nav-item"><a class="nav-link dropdown-title">Home</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">
+                        <span class="material-symbols-rounded">local_library</span>
+                        <span class="nav-label">About Us</span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li class="nav-item"><a class="nav-link dropdown-title">About Us</a></li>
+                    </ul>
+                </li>
+                <!-- Dropdown -->
+                <li class="nav-item dropdown-container">
+                    <a href="courses.html" class="nav-link dropdown-toggle">
+                        <span class="material-symbols-rounded">book</span>
+                        <span class="nav-label">Courses</span>
+                        <span class="dropdown-icon material-symbols-rounded">keyboard_arrow_down</span>
+                    </a>
+                    <!-- Dropdown Menu -->
+                    <ul class="dropdown-menu">
+                        <li class="nav-item"><a class="nav-link dropdown-title">Courses</a></li>
+                        <li class="nav-item"><a href="html-course.html" class="nav-link dropdown-link">HTML</a></li>
+                        <li class="nav-item"><a href="css-course.html" class="nav-link dropdown-link">CSS</a></li>
+                        <li class="nav-item"><a href="javascript-course.html" class="nav-link dropdown-link">JavaScript</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="blog.html" class="nav-link">
+                        <span class="material-symbols-rounded">article</span>
+                        <span class="nav-label">Blog</span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li class="nav-item"><a class="nav-link dropdown-title">Blog</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="pricing.html" class="nav-link">
+                        <span class="material-symbols-rounded">payments</span>
+                        <span class="nav-label">Pricing</span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li class="nav-item"><a class="nav-link dropdown-title">Pricing</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="faq.html" class="nav-link">
+                        <span class="material-symbols-rounded">help</span>
+                        <span class="nav-label">FAQ</span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li class="nav-item"><a class="nav-link dropdown-title">FAQ</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">
+                        <span class="material-symbols-rounded">contact_mail</span>
+                        <span class="nav-label">Contact</span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li class="nav-item"><a class="nav-link dropdown-title">Contact</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="login.html" class="nav-link">
+                        <span class="material-symbols-rounded">login</span>
+                        <span class="nav-label">Login</span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li class="nav-item"><a class="nav-link dropdown-title">Login</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="dashboard.html" class="nav-link">
+                        <span class="material-symbols-rounded">dashboard</span>
+                        <span class="nav-label">Dashboard</span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li class="nav-item"><a class="nav-link dropdown-title">Dashboard</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </aside>
+    
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="content-container">
+            <!-- Course Header -->
+            <div class="page-header">
+                <h1 class="page-title">CSS Styling & Layout</h1>
+                <p class="page-subtitle">Master modern CSS techniques and responsive design</p>
+            </div>
+
+            <!-- Course Overview -->
+            <div class="grid grid-2">
+                <div class="card">
+                    <h2 class="card-title">Course Overview</h2>
+                    <div class="card-content">
+                        <p>CSS (Cascading Style Sheets) brings your HTML to life with beautiful styling and layouts. Learn modern CSS techniques including Flexbox, Grid, animations, and responsive design principles.</p>
+                        
+                        <h3>What You'll Learn:</h3>
+                        <ul>
+                            <li>CSS fundamentals and selectors</li>
+                            <li>Box model and positioning</li>
+                            <li>Flexbox and CSS Grid layouts</li>
+                            <li>Responsive design and media queries</li>
+                            <li>CSS animations and transitions</li>
+                            <li>CSS preprocessors (SASS/SCSS)</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <h2 class="card-title">Course Details</h2>
+                    <div class="card-content">
+                        <div style="margin-bottom: 15px;">
+                            <strong>Duration:</strong> 6 weeks<br>
+                            <strong>Level:</strong> Intermediate<br>
+                            <strong>Price:</strong> $149<br>
+                            <strong>Instructor:</strong> Michael Chen<br>
+                            <strong>Students:</strong> 1,800+ enrolled
+                        </div>
+                        
+                        <div style="margin-top: 20px;">
+                            <a href="login.html" class="btn btn-primary">Enroll Now</a>
+                            <a href="pricing.html" class="btn btn-secondary" style="margin-left: 10px;">View Pricing</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Course Curriculum -->
+            <div class="card">
+                <h2 class="card-title">Course Curriculum</h2>
+                <div class="card-content">
+                    <div style="margin-bottom: 30px;">
+                        <h3>Week 1-2: CSS Fundamentals</h3>
+                        <ul>
+                            <li>CSS syntax and selectors</li>
+                            <li>Box model and display properties</li>
+                            <li>Colors, backgrounds, and typography</li>
+                            <li>Positioning: static, relative, absolute, fixed</li>
+                            <li>Floats and clearfix techniques</li>
+                        </ul>
+                    </div>
+                    
+                    <div style="margin-bottom: 30px;">
+                        <h3>Week 3-4: Modern Layout Systems</h3>
+                        <ul>
+                            <li>Flexbox: flex containers and items</li>
+                            <li>CSS Grid: grid containers and tracks</li>
+                            <li>Combining Flexbox and Grid</li>
+                            <li>Layout patterns and best practices</li>
+                            <li>Cross-browser compatibility</li>
+                        </ul>
+                    </div>
+                    
+                    <div style="margin-bottom: 30px;">
+                        <h3>Week 5-6: Advanced CSS</h3>
+                        <ul>
+                            <li>Responsive design and media queries</li>
+                            <li>CSS animations and keyframes</li>
+                            <li>Transitions and transforms</li>
+                            <li>CSS preprocessors (SASS/SCSS)</li>
+                            <li>CSS methodologies (BEM)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Prerequisites -->
+            <div class="card">
+                <h2 class="card-title">Prerequisites</h2>
+                <div class="card-content">
+                    <p>Before taking this course, you should have:</p>
+                    <ul>
+                        <li>Basic HTML knowledge (or completion of our HTML Fundamentals course)</li>
+                        <li>Understanding of web browsers and developer tools</li>
+                        <li>A text editor and web browser</li>
+                    </ul>
+                </div>
+            </div>
+
+           
+        </div>
+    </main>
+
+    <!-- Script -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us - EduCourse</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0" />
+</head>
+
+<body>
+    <!-- Mobile Sidebar Menu Button -->
+    <button class="sidebar-menu-button">
+        <span class="material-symbols-rounded">menu</span>
+    </button>
+    <aside class="sidebar">
+        <!-- Sidebar Header -->
+        <header class="sidebar-header">
+            <a href="#" class="header-logo">
+                <img src="logo.png" alt="EduCourse" />
+            </a>
+            <button class="sidebar-toggler">
+                <span class="material-symbols-rounded">chevron_left</span>
+            </button>
+        </header>
+        <nav class="sidebar-nav">         
+            <!-- Primary Top Nav -->
+            <ul class="nav-list primary-nav">
+                <!-- Search Form -->
+                <form action="#" class="search-form">
+                    <span class="material-symbols-rounded">search</span>
+                    <input type="search" placeholder="Search..." required />
+                </form>
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">
+                        <span class="material-symbols-rounded">home</span>
+                        <span class="nav-label">Home</span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li class="nav-item"><a class="nav-link dropdown-title">Home</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">
+                        <span class="material-symbols-rounded">local_library</span>
+                        <span class="nav-label">About Us</span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li class="nav-item"><a class="nav-link dropdown-title">About Us</a></li>
+                    </ul>
+                </li>
+                <!-- Dropdown -->
+                <li class="nav-item dropdown-container">
+                    <a href="courses.html" class="nav-link dropdown-toggle">
+                        <span class="material-symbols-rounded">book</span>
+                        <span class="nav-label">Courses</span>
+                        <span class="dropdown-icon material-symbols-rounded">keyboard_arrow_down</span>
+                    </a>
+                    <!-- Dropdown Menu -->
+                    <ul class="dropdown-menu">
+                        <li class="nav-item"><a class="nav-link dropdown-title">Courses</a></li>
+                        <li class="nav-item"><a href="html-course.html" class="nav-link dropdown-link">HTML</a></li>
+                        <li class="nav-item"><a href="css-course.html" class="nav-link dropdown-link">CSS</a></li>
+                        <li class="nav-item"><a href="javascript-course.html" class="nav-link dropdown-link">JavaScript</a></li>
+                    </ul>
+                </li>
+               
+                <li class="nav-item">
+                    <a href="blog.html" class="nav-link">
+                        <span class="material-symbols-rounded">article</span>
+                        <span class="nav-label">Blog</span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li class="nav-item"><a class="nav-link dropdown-title">Blog</a></li>
+                    </ul>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="pricing.html" class="nav-link">
+                        <span class="material-symbols-rounded">payments</span>
+                        <span class="nav-label">Pricing</span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li class="nav-item"><a class="nav-link dropdown-title">Pricing</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="faq.html" class="nav-link">
+                        <span class="material-symbols-rounded">help</span>
+                        <span class="nav-label">FAQ</span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li class="nav-item"><a class="nav-link dropdown-title">FAQ</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">
+                        <span class="material-symbols-rounded">contact_mail</span>
+                        <span class="nav-label">Contact</span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li class="nav-item"><a class="nav-link dropdown-title">Contact</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="login.html" class="nav-link">
+                        <span class="material-symbols-rounded">login</span>
+                        <span class="nav-label">Login</span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li class="nav-item"><a class="nav-link dropdown-title">Login</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="dashboard.html" class="nav-link">
+                        <span class="material-symbols-rounded">dashboard</span>
+                        <span class="nav-label">Dashboard</span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li class="nav-item"><a class="nav-link dropdown-title">Dashboard</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </aside>
+    
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="content-container">
+            <!-- Page Header -->
+            <div class="page-header">
+                <h1 class="page-title">Contact Us</h1>
+                <p class="page-subtitle">Get in touch with our team - we're here to help!</p>
+            </div>
+
+            <!-- Contact Form and Info -->
+            <div class="grid grid-2">
+                <!-- Contact Form -->
+                <div class="card">
+                    <h2 class="card-title">Send us a Message</h2>
+                    <form class="card-content">
+                        <div class="form-group">
+                            <label class="form-label" for="name">Full Name</label>
+                            <input type="text" id="name" class="form-input" placeholder="Your full name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="form-label" for="email">Email Address</label>
+                            <input type="email" id="email" class="form-input" placeholder="your.email@example.com" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="form-label" for="subject">Subject</label>
+                            <input type="text" id="subject" class="form-input" placeholder="What's this about?" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="form-label" for="message">Message</label>
+                            <textarea id="message" class="form-input form-textarea" placeholder="Tell us how we can help you..." required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+
+                <!-- Contact Information -->
+                <div class="contact-info">
+                    <h2 class="card-title">Get in Touch</h2>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <span class="material-symbols-rounded">email</span>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Email</h4>
+                            <p>support@educourse.com<br>info@educourse.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <span class="material-symbols-rounded">phone</span>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Phone</h4>
+                            <p>+1 (555) 123-4567<br>Mon-Fri 9AM-6PM EST</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <span class="material-symbols-rounded">location_on</span>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Office</h4>
+                            <p>123 Education Street<br>Tech City, TC 12345</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <span class="material-symbols-rounded">schedule</span>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Business Hours</h4>
+                            <p>Monday - Friday: 9:00 AM - 6:00 PM<br>Saturday: 10:00 AM - 4:00 PM<br>Sunday: Closed</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Support Channels -->
+            <div class="card">
+                <h2 class="card-title">Support Channels</h2>
+                <div class="grid grid-3">
+                    <div class="card">
+                        <h3 class="card-title">Live Chat</h3>
+                        <div class="card-content">
+                            <p>Get instant help with our live chat support. Available during business hours for quick questions and technical issues.</p>
+                            <a href="#" class="btn btn-primary">Start Chat</a>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <h3 class="card-title">Community Forum</h3>
+                        <div class="card-content">
+                            <p>Join our community forum to ask questions, share projects, and connect with other students and instructors.</p>
+                            <a href="#" class="btn btn-primary">Visit Forum</a>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <h3 class="card-title">Help Center</h3>
+                        <div class="card-content">
+                            <p>Browse our comprehensive help center for tutorials, troubleshooting guides, and frequently asked questions.</p>
+                            <a href="faq.html" class="btn btn-primary">Help Center</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Response Time -->
+            <div class="grid grid-2">
+                <div class="card">
+                    <h2 class="card-title">Response Times</h2>
+                    <div class="card-content">
+                        <ul>
+                            <li><strong>Live Chat:</strong> Immediate response during business hours</li>
+                            <li><strong>Email Support:</strong> Within 24 hours</li>
+                            <li><strong>Technical Issues:</strong> Within 4 hours</li>
+                            <li><strong>General Inquiries:</strong> Within 48 hours</li>
+                            <li><strong>Community Forum:</strong> Usually within a few hours</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <h2 class="card-title">Before You Contact Us</h2>
+                    <div class="card-content">
+                        <p>To help us assist you better, please check:</p>
+                        <ul>
+                            <li>Our FAQ page for common questions</li>
+                            <li>Course materials and documentation</li>
+                            <li>Community forum for similar issues</li>
+                            <li>Browser and system requirements</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Social Media -->
+            <div class="card">
+                <h2 class="card-title">Follow Us</h2>
+                <div class="card-content" style="text-align: center;">
+                    <p>Stay updated with the latest news, tips, and course announcements</p>
+                    <div style="margin-top: 20px;">
+                        <a href="#" class="btn btn-secondary" style="margin: 5px;">Twitter</a>
+                        <a href="#" class="btn btn-secondary" style="margin: 5px;">LinkedIn</a>
+                        <a href="#" class="btn btn-secondary" style="margin: 5px;">YouTube</a>
+                        <a href="#" class="btn btn-secondary" style="margin: 5px;">GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Script -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>

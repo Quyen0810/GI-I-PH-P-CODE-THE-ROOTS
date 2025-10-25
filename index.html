@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<!-- Coding By CodingNepal - youtube.com/@codingnepal -->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EduCourse - Nền Tảng Học Trực Tuyến</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Linking Google Fonts for Icons -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0" />
+</head>
+
+<body>
+    <!-- Mobile Sidebar Menu Button -->
+    <button class="sidebar-menu-button">
+        <span class="material-symbols-rounded">menu</span>
+    </button>
+    <aside class="sidebar">
+        <!-- Sidebar Header -->
+        <header class="sidebar-header">
+            <a href="#" class="header-logo">
+                <img src="logo.png" alt="CodingNepal" />
+            </a>
+            <button class="sidebar-toggler">
+                <span class="material-symbols-rounded">chevron_left</span>
+            </button>
+        </header>
+        <nav class="sidebar-nav">
+            <!-- Primary Top Nav -->
+            <ul class="nav-list primary-nav">
+             <!-- Search Form -->
+          <form action="#" class="search-form">
+            <span class="material-symbols-rounded">search</span>
+                    <input type="search" placeholder="Tìm kiếm..." required />
+          </form>
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">
+                        <span class="material-symbols-rounded">home</span>
+                        <span class="nav-label">Trang Chủ</span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li class="nav-item"><a class="nav-link dropdown-title">Trang Chủ</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">
+                        <span class="material-symbols-rounded">local_library</span>
+                        <span class="nav-label">Giới Thiệu</span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li class="nav-item"><a class="nav-link dropdown-title">Giới Thiệu</a></li>
+                    </ul>
+                </li>
+                <!-- Dropdown -->
+                <li class="nav-item dropdown-container">
+                    <a href="courses.html" class="nav-link dropdown-toggle">
+                        <span class="material-symbols-rounded">book</span>
+                        <span class="nav-label">Khóa Học</span>
+                        <span class="dropdown-icon material-symbols-rounded">keyboard_arrow_down</span>
+                    </a>
+                    <!-- Dropdown Menu -->
+                    <ul class="dropdown-menu">
+                        <li class="nav-item"><a class="nav-link dropdown-title">Khóa Học</a></li>
+                        <li class="nav-item"><a href="html-course.html" class="nav-link dropdown-link">HTML</a></li>
+                        <li class="nav-item"><a href="css-course.html" class="nav-link dropdown-link">CSS</a></li>
+                        <li class="nav-item"><a href="javascript-course.html" class="nav-link dropdown-link">JavaScript</a></li>
+                    </ul>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="blog.html" class="nav-link">
+                        <span class="material-symbols-rounded">article</span>
+                        <span class="nav-label">Blog</span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li class="nav-item"><a class="nav-link dropdown-title">Blog</a></li>
+                    </ul>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="pricing.html" class="nav-link">
+                        <span class="material-symbols-rounded">payments</span>
+                        <span class="nav-label">Bảng Giá</span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li class="nav-item"><a class="nav-link dropdown-title">Bảng Giá</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="faq.html" class="nav-link">
+                        <span class="material-symbols-rounded">help</span>
+                        <span class="nav-label">Câu Hỏi</span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li class="nav-item"><a class="nav-link dropdown-title">Câu Hỏi</a></li>
+                    </ul>
+                        </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">
+                        <span class="material-symbols-rounded">contact_mail</span>
+                        <span class="nav-label">Liên Hệ</span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li class="nav-item"><a class="nav-link dropdown-title">Liên Hệ</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="login.html" class="nav-link">
+                        <span class="material-symbols-rounded">login</span>
+                        <span class="nav-label">Đăng Nhập</span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li class="nav-item"><a class="nav-link dropdown-title">Đăng Nhập</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="dashboard.html" class="nav-link">
+                        <span class="material-symbols-rounded">dashboard</span>
+                        <span class="nav-label">Bảng Điều Khiển</span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li class="nav-item"><a class="nav-link dropdown-title">Bảng Điều Khiển</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <!-- Secondary Bottom Nav -->
+
+        </nav>
+    </aside>
+    
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="content-container">
+            <!-- Hero Section -->
+            <div class="page-header">
+                <h1 class="page-title">Chào Mừng Đến Với EduCourse</h1>
+                <p class="page-subtitle">Cổng vào kỹ năng phát triển web chuyên nghiệp của bạn</p>
+            </div>
+
+            <!-- Featured Courses -->
+            <div class="card">
+                <h2 class="card-title">Khóa Học Nổi Bật</h2>
+                <div class="grid grid-3">
+                    <div class="course-card">
+                        <div class="course-image">
+                            <span class="material-symbols-rounded">code</span>
+                        </div>
+                        <div class="course-content">
+                            <h3 class="course-title">Cơ Bản HTML</h3>
+                            <p class="course-description">Học các khối xây dựng của phát triển web với HTML5</p>
+                            <div class="course-meta">
+                                <span class="course-duration">4 tuần</span>
+                                <span class="course-price">$99</span>
+                            </div>
+                            <a href="html-course.html" class="btn btn-primary">Xem Khóa Học</a>
+                        </div>
+                    </div>
+                    
+                    <div class="course-card">
+                        <div class="course-image">
+                            <span class="material-symbols-rounded">palette</span>
+                        </div>
+                        <div class="course-content">
+                            <h3 class="course-title">CSS Styling</h3>
+                            <p class="course-description">Thành thạo các kỹ thuật CSS hiện đại và thiết kế responsive</p>
+                            <div class="course-meta">
+                                <span class="course-duration">6 tuần</span>
+                                <span class="course-price">$149</span>
+                            </div>
+                            <a href="css-course.html" class="btn btn-primary">Xem Khóa Học</a>
+                        </div>
+                    </div>
+                    
+                    <div class="course-card">
+                        <div class="course-image">
+                            <span class="material-symbols-rounded">javascript</span>
+                        </div>
+                        <div class="course-content">
+                            <h3 class="course-title">Lập Trình JavaScript</h3>
+                            <p class="course-description">Xây dựng các ứng dụng web tương tác với JavaScript</p>
+                            <div class="course-meta">
+                                <span class="course-duration">8 tuần</span>
+                                <span class="course-price">$199</span>
+                            </div>
+                            <a href="javascript-course.html" class="btn btn-primary">Xem Khóa Học</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Why Choose Us -->
+            <div class="grid grid-2">
+                <div class="card">
+                    <h2 class="card-title">Tại Sao Chọn EduCourse?</h2>
+                    <div class="card-content">
+                        <ul>
+                            <li>Giảng viên chuyên gia với kinh nghiệm thực tế</li>
+                            <li>Dự án thực hành và ứng dụng thực tế</li>
+                            <li>Lịch học linh hoạt</li>
+                            <li>Chứng chỉ hoàn thành</li>
+                            <li>Truy cập trọn đời tài liệu khóa học</li>
+                            <li>Hỗ trợ cộng đồng và kết nối</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <h2 class="card-title">Bắt Đầu Ngay Hôm Nay</h2>
+                    <div class="card-content">
+                        <p>Tham gia cùng hàng nghìn học viên đã thay đổi sự nghiệp với các khóa học phát triển web toàn diện của chúng tôi.</p>
+                        <div style="margin-top: 20px;">
+                            <a href="courses.html" class="btn btn-primary">Duyệt Tất Cả Khóa Học</a>
+                            <a href="login.html" class="btn btn-secondary" style="margin-left: 10px;">Đăng Ký Ngay</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
