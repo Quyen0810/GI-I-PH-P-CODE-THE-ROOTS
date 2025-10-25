@@ -1,36 +1,36 @@
-// Toggle the visibility of a dropdown menu
+// Chuyển đổi hiển thị của menu thả xuống
 const toggleDropdown = (dropdown, menu, isOpen) => {
     dropdown.classList.toggle("open", isOpen);
     menu.style.height = isOpen ? `${menu.scrollHeight}px` : 0;
   };
-  // Close all open dropdowns
+  // Đóng tất cả menu thả xuống đang mở
   const closeAllDropdowns = () => {
     document.querySelectorAll(".dropdown-container.open").forEach((openDropdown) => {
       toggleDropdown(openDropdown, openDropdown.querySelector(".dropdown-menu"), false);
     });
   };
-  // Attach click event to all dropdown toggles
+  // Gắn sự kiện nhấn cho các nút mở menu
   document.querySelectorAll(".dropdown-toggle").forEach((dropdownToggle) => {
     dropdownToggle.addEventListener("click", (e) => {
       e.preventDefault();
       const dropdown = dropdownToggle.closest(".dropdown-container");
       const menu = dropdown.querySelector(".dropdown-menu");
       const isOpen = dropdown.classList.contains("open");
-      closeAllDropdowns(); // Close all open dropdowns
-      toggleDropdown(dropdown, menu, !isOpen); // Toggle current dropdown visibility
+      closeAllDropdowns(); // Đóng mọi menu đang mở
+      toggleDropdown(dropdown, menu, !isOpen); // Bật tắt hiển thị menu hiện tại
     });
   });
-  // Attach click event to sidebar toggle buttons
+  // Gắn sự kiện nhấn cho nút thu gọn thanh bên
   document.querySelectorAll(".sidebar-toggler, .sidebar-menu-button").forEach((button) => {
     button.addEventListener("click", () => {
-      closeAllDropdowns(); // Close all open dropdowns
-      document.querySelector(".sidebar").classList.toggle("collapsed"); // Toggle collapsed class on sidebar
+      closeAllDropdowns(); // Đóng mọi menu đang mở
+      document.querySelector(".sidebar").classList.toggle("collapsed"); // Thay đổi trạng thái thu gọn của thanh bên
     });
   });
-  // Collapse sidebar by default on small screens
+  // Tự động thu gọn thanh bên trên màn hình nhỏ
   if (window.innerWidth <= 1024) document.querySelector(".sidebar").classList.add("collapsed");
 
-  // Search functionality
+  // Chức năng tìm kiếm
   const searchInput = document.querySelector('.search-form input');
   const navItems = document.querySelectorAll('.nav-item');
   
@@ -47,10 +47,10 @@ const toggleDropdown = (dropdown, menu, isOpen) => {
           const labelText = navLabel.textContent.toLowerCase();
           const isMatch = labelText.includes(searchTerm);
           
-          // Show/hide main nav item
+          // Hiển thị hoặc ẩn mục điều hướng chính
           item.style.display = isMatch ? 'block' : 'none';
           
-          // If it's a dropdown container, also check dropdown links
+          // Nếu là mục có menu thả xuống, kiểm tra thêm các liên kết con
           if (item.classList.contains('dropdown-container')) {
             const dropdownMenu = item.querySelector('.dropdown-menu');
             if (dropdownMenu) {
@@ -64,7 +64,7 @@ const toggleDropdown = (dropdown, menu, isOpen) => {
         }
       });
       
-      // If search is empty, show all items
+      // Khi ô tìm kiếm trống, hiển thị tất cả mục
       if (searchTerm === '') {
         navItems.forEach(item => {
           item.style.display = 'block';
@@ -72,7 +72,7 @@ const toggleDropdown = (dropdown, menu, isOpen) => {
       }
     });
     
-    // Prevent form submission
+    // Ngăn biểu mẫu gửi đi
     document.querySelector('.search-form').addEventListener('submit', (e) => {
       e.preventDefault();
     });

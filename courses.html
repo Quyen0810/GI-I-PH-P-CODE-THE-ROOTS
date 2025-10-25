@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 
 <head>
     <meta charset="UTF-8" />
@@ -11,14 +11,14 @@
 </head>
 
 <body>
-    <!-- Mobile Sidebar Menu Button -->
+    <!-- Nút mở thanh bên trên thiết bị di động -->
     <button class="sidebar-menu-button">
         <span class="material-symbols-rounded">menu</span>
     </button>
     <aside class="sidebar">
-        <!-- Sidebar Header -->
+        <!-- Phần đầu thanh bên -->
         <header class="sidebar-header">
-            <a href="#" class="header-logo">
+            <a href="index.html" class="header-logo">
                 <img src="logo.png" alt="EduCourse" />
             </a>
             <button class="sidebar-toggler">
@@ -26,9 +26,9 @@
             </button>
         </header>
         <nav class="sidebar-nav">         
-            <!-- Primary Top Nav -->
+            <!-- Điều hướng chính -->
             <ul class="nav-list primary-nav">
-                <!-- Search Form -->
+                <!-- Form tìm kiếm -->
                 <form action="#" class="search-form">
                     <span class="material-symbols-rounded">search</span>
                     <input type="search" placeholder="Tìm kiếm..." required />
@@ -51,14 +51,14 @@
                         <li class="nav-item"><a class="nav-link dropdown-title">Giới Thiệu</a></li>
                     </ul>
                 </li>
-                <!-- Dropdown -->
+                <!-- Mục có menu thả xuống -->
                 <li class="nav-item dropdown-container">
                     <a href="courses.html" class="nav-link dropdown-toggle">
                         <span class="material-symbols-rounded">book</span>
                         <span class="nav-label">Khóa Học</span>
                         <span class="dropdown-icon material-symbols-rounded">keyboard_arrow_down</span>
                     </a>
-                    <!-- Dropdown Menu -->
+                    <!-- Danh sách thả xuống -->
                     <ul class="dropdown-menu">
                         <li class="nav-item"><a class="nav-link dropdown-title">Khóa Học</a></li>
                         <li class="nav-item"><a href="html-course.html" class="nav-link dropdown-link">HTML</a></li>
@@ -125,16 +125,20 @@
         </nav>
     </aside>
     
-    <!-- Main Content -->
+    <!-- Nội dung chính -->
     <main class="main-content">
         <div class="content-container">
-            <!-- Page Header -->
+            <!-- Tiêu đề trang -->
             <div class="page-header">
+                <span class="section-badge">
+                    <span class="material-symbols-rounded">menu_book</span>
+                    Lộ trình học tập toàn diện
+                </span>
                 <h1 class="page-title">Tất Cả Khóa Học</h1>
-                <p class="page-subtitle">Thành thạo phát triển web với danh mục khóa học toàn diện của chúng tôi</p>
+                <p class="page-subtitle">Chọn khóa học phù hợp với mục tiêu sự nghiệp của bạn và học theo tốc độ linh hoạt cùng đội ngũ chuyên gia.</p>
             </div>
 
-            <!-- Course Categories -->
+            <!-- Danh mục khóa học -->
             <div class="card">
                 <h2 class="card-title">Danh Mục Khóa Học</h2>
                 <div class="grid grid-3">
@@ -158,7 +162,7 @@
                             <span class="material-symbols-rounded">palette</span>
                         </div>
                         <div class="course-content">
-                            <h3 class="course-title">CSS Styling & Layout</h3>
+                            <h3 class="course-title">Thiết Kế &amp; Bố Cục CSS</h3>
                             <p class="course-description">Thành thạo các kỹ thuật CSS hiện đại, Flexbox, Grid, animation và nguyên tắc thiết kế responsive.</p>
                             <div class="course-meta">
                                 <span class="course-duration">6 tuần</span>
@@ -188,13 +192,13 @@
                             <span class="material-symbols-rounded">api</span>
                         </div>
                         <div class="course-content">
-                            <h3 class="course-title">React Development</h3>
-                            <p class="course-description">Learn React.js from basics to advanced concepts including hooks, state management, and routing.</p>
+                            <h3 class="course-title">Phát Triển React</h3>
+                            <p class="course-description">Tìm hiểu React.js từ cơ bản đến nâng cao: hooks, quản lý state, routing và tối ưu hiệu năng.</p>
                             <div class="course-meta">
-                                <span class="course-duration">10 weeks</span>
+                                <span class="course-duration">10 tuần</span>
                                 <span class="course-price">$249</span>
                             </div>
-                            <a href="#" class="btn btn-primary">View Course</a>
+                            <a href="#chi-tiet-react" class="btn btn-primary">Xem Chi Tiết</a>
                         </div>
                     </div>
 
@@ -203,13 +207,13 @@
                             <span class="material-symbols-rounded">storage</span>
                         </div>
                         <div class="course-content">
-                            <h3 class="course-title">Node.js Backend</h3>
-                            <p class="course-description">Build server-side applications with Node.js, Express, databases, and RESTful APIs.</p>
+                            <h3 class="course-title">Backend Node.js</h3>
+                            <p class="course-description">Xây dựng ứng dụng phía máy chủ với Node.js, Express, cơ sở dữ liệu và API RESTful.</p>
                             <div class="course-meta">
-                                <span class="course-duration">8 weeks</span>
+                                <span class="course-duration">8 tuần</span>
                                 <span class="course-price">$199</span>
                             </div>
-                            <a href="#" class="btn btn-primary">View Course</a>
+                            <a href="#chi-tiet-node" class="btn btn-primary">Xem Chi Tiết</a>
                         </div>
                     </div>
 
@@ -218,13 +222,13 @@
                             <span class="material-symbols-rounded">database</span>
                         </div>
                         <div class="course-content">
-                            <h3 class="course-title">Database Design</h3>
-                            <p class="course-description">Master database design, SQL queries, MongoDB, and data modeling for web applications.</p>
+                            <h3 class="course-title">Thiết Kế Cơ Sở Dữ Liệu</h3>
+                            <p class="course-description">Nắm vững thiết kế cơ sở dữ liệu, truy vấn SQL, MongoDB và mô hình hóa dữ liệu cho ứng dụng web.</p>
                             <div class="course-meta">
-                                <span class="course-duration">6 weeks</span>
+                                <span class="course-duration">6 tuần</span>
                                 <span class="course-price">$149</span>
                             </div>
-                            <a href="#" class="btn btn-primary">View Course</a>
+                            <a href="#chi-tiet-database" class="btn btn-primary">Xem Chi Tiết</a>
                         </div>
                     </div>
 
@@ -233,13 +237,13 @@
                             <span class="material-symbols-rounded">security</span>
                         </div>
                         <div class="course-content">
-                            <h3 class="course-title">Web Security</h3>
-                            <p class="course-description">Learn web security best practices, authentication, authorization, and common vulnerabilities.</p>
+                            <h3 class="course-title">Bảo Mật Web</h3>
+                            <p class="course-description">Học các thực hành bảo mật web, xác thực, phân quyền và cách phòng tránh lỗ hổng phổ biến.</p>
                             <div class="course-meta">
-                                <span class="course-duration">4 weeks</span>
+                                <span class="course-duration">4 tuần</span>
                                 <span class="course-price">$99</span>
                             </div>
-                            <a href="#" class="btn btn-primary">View Course</a>
+                            <a href="#chi-tiet-security" class="btn btn-primary">Xem Chi Tiết</a>
                         </div>
                     </div>
 
@@ -248,13 +252,13 @@
                             <span class="material-symbols-rounded">speed</span>
                         </div>
                         <div class="course-content">
-                            <h3 class="course-title">Performance Optimization</h3>
-                            <p class="course-description">Optimize web applications for speed, SEO, and user experience with modern techniques.</p>
+                            <h3 class="course-title">Tối Ưu Hiệu Năng</h3>
+                            <p class="course-description">Tối ưu ứng dụng web cho tốc độ, SEO và trải nghiệm người dùng với các kỹ thuật mới nhất.</p>
                             <div class="course-meta">
-                                <span class="course-duration">4 weeks</span>
+                                <span class="course-duration">4 tuần</span>
                                 <span class="course-price">$99</span>
                             </div>
-                            <a href="#" class="btn btn-primary">View Course</a>
+                            <a href="#chi-tiet-performance" class="btn btn-primary">Xem Chi Tiết</a>
                         </div>
                     </div>
 
@@ -263,26 +267,26 @@
                             <span class="material-symbols-rounded">devices</span>
                         </div>
                         <div class="course-content">
-                            <h3 class="course-title">Mobile Development</h3>
-                            <p class="course-description">Build responsive mobile-first applications using modern frameworks and best practices.</p>
+                            <h3 class="course-title">Phát Triển Mobile</h3>
+                            <p class="course-description">Xây dựng ứng dụng ưu tiên di động với các framework hiện đại và quy trình chuẩn.</p>
                             <div class="course-meta">
-                                <span class="course-duration">6 weeks</span>
+                                <span class="course-duration">6 tuần</span>
                                 <span class="course-price">$149</span>
                             </div>
-                            <a href="#" class="btn btn-primary">View Course</a>
+                            <a href="#chi-tiet-mobile" class="btn btn-primary">Xem Chi Tiết</a>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <!-- Learning Path -->
+            <!-- Lộ trình học tập -->
             <div class="card">
                 <h2 class="card-title">Đường Dẫn Học Tập Được Khuyến Nghị</h2>
                 <div class="card-content">
                     <p>Mới bắt đầu phát triển web? Hãy làm theo đường dẫn học tập được khuyến nghị của chúng tôi để xây dựng kỹ năng của bạn một cách tiến bộ:</p>
                     <ol style="margin-top: 20px; line-height: 2;">
                         <li><strong>Cơ Bản HTML</strong> - Bắt đầu với những điều cơ bản về cấu trúc web</li>
-                        <li><strong>CSS Styling & Layout</strong> - Học cách tạo kiểu và bố cục trang</li>
+                            <li><strong>Thiết Kế &amp; Bố Cục CSS</strong> - Học cách tạo kiểu và bố cục trang</li>
                         <li><strong>Lập Trình JavaScript</strong> - Thêm tính tương tác vào trang web</li>
                         <li><strong>Phát Triển React</strong> - Xây dựng giao diện người dùng hiện đại</li>
                         <li><strong>Backend Node.js</strong> - Tạo ứng dụng phía máy chủ</li>
@@ -291,7 +295,73 @@
                 </div>
             </div>
 
-            <!-- Course Features -->
+            <!-- Chi tiết khóa học nâng cao -->
+            <div class="card">
+                <h2 class="card-title">Chi tiết khóa học nâng cao</h2>
+                <div class="card-content">
+                    <div class="course-detail" id="chi-tiet-react">
+                        <h3>Phát Triển React</h3>
+                        <p>Đào sâu vào hooks, quản lý state và tối ưu hiệu năng cho ứng dụng React ở môi trường sản xuất.</p>
+                        <ul>
+                            <li>Xây dựng component theo kiến trúc module và chuẩn hóa đặt tên.</li>
+                            <li>Sử dụng Context API và các thư viện quản lý state (Redux, Zustand).</li>
+                            <li>Tối ưu render với memoization, lazy loading và code splitting.</li>
+                        </ul>
+                    </div>
+
+                    <div class="course-detail" id="chi-tiet-node">
+                        <h3>Backend Node.js</h3>
+                        <p>Tạo hệ thống phía máy chủ an toàn với Express, tích hợp cơ sở dữ liệu và triển khai API RESTful chuẩn.</p>
+                        <ul>
+                            <li>Thiết kế kiến trúc thư mục và middleware có khả năng mở rộng.</li>
+                            <li>Áp dụng xác thực JWT, phân quyền và bảo vệ API.</li>
+                            <li>Triển khai logging, giám sát và tối ưu hiệu năng máy chủ.</li>
+                        </ul>
+                    </div>
+
+                    <div class="course-detail" id="chi-tiet-database">
+                        <h3>Thiết Kế Cơ Sở Dữ Liệu</h3>
+                        <p>Làm chủ tư duy mô hình hóa dữ liệu quan hệ và NoSQL để hỗ trợ quy mô người dùng lớn.</p>
+                        <ul>
+                            <li>Chuẩn hóa bảng, khóa và mối quan hệ trong hệ thống SQL.</li>
+                            <li>Thiết kế schema MongoDB tối ưu cho truy vấn phức tạp.</li>
+                            <li>Xây dựng chiến lược backup, sharding và tối ưu hiệu suất.</li>
+                        </ul>
+                    </div>
+
+                    <div class="course-detail" id="chi-tiet-security">
+                        <h3>Bảo Mật Web</h3>
+                        <p>Hiểu các lỗ hổng phổ biến và triển khai biện pháp bảo vệ theo chuẩn OWASP.</p>
+                        <ul>
+                            <li>Ngăn ngừa XSS, CSRF, SQL Injection với các kỹ thuật bảo vệ chủ động.</li>
+                            <li>Triển khai cơ chế xác thực đa lớp và quản lý phiên an toàn.</li>
+                            <li>Thiết lập quy trình kiểm thử bảo mật và giám sát sự cố.</li>
+                        </ul>
+                    </div>
+
+                    <div class="course-detail" id="chi-tiet-performance">
+                        <h3>Tối Ưu Hiệu Năng</h3>
+                        <p>Phân tích điểm nghẽn và áp dụng kỹ thuật tăng tốc cho cả frontend lẫn backend.</p>
+                        <ul>
+                            <li>Sử dụng Lighthouse, WebPageTest để đo đạc và lập kế hoạch tối ưu.</li>
+                            <li>Áp dụng caching, CDN và tối ưu tải tài nguyên.</li>
+                            <li>Giảm tải máy chủ với queue, worker và tối ưu truy vấn.</li>
+                        </ul>
+                    </div>
+
+                    <div class="course-detail" id="chi-tiet-mobile">
+                        <h3>Phát Triển Mobile</h3>
+                        <p>Xây dựng ứng dụng đa nền tảng với React Native và các pattern tối ưu trải nghiệm di động.</p>
+                        <ul>
+                            <li>Thiết kế giao diện native thân thiện với người dùng Việt Nam.</li>
+                            <li>Kết nối API, quản lý state và xử lý offline-first.</li>
+                            <li>Đóng gói, kiểm thử và đưa ứng dụng lên App Store, Google Play.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Đặc điểm khóa học -->
             <div class="grid grid-2">
                 <div class="card">
                     <h2 class="card-title">Bạn Sẽ Nhận Được Gì</h2>
@@ -323,7 +393,7 @@
         </div>
     </main>
 
-    <!-- Script -->
+    <!-- Tệp script -->
     <script src="js/script.js"></script>
 </body>
 
