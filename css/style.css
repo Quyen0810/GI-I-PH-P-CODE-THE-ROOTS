@@ -67,12 +67,71 @@ body::before {
   justify-content: space-between;
 }
 .sidebar-header .header-logo img {
-  width: 46px;
-  height: 46px;
+  width: 60px;
+  height: 60px;
   display: block;
   object-fit: contain;
-  border-radius: 12px;
-  box-shadow: 0 8px 18px rgba(15, 23, 42, 0.4);
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(15, 23, 42, 0.5);
+  transition: all 0.3s ease;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Main Logo Styles */
+.header-brand {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  margin-bottom: 30px;
+}
+
+.main-logo {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  border-radius: 20px;
+  box-shadow: 0 15px 40px rgba(15, 23, 42, 0.3);
+  border: 3px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.4s ease;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05));
+  backdrop-filter: blur(10px);
+}
+
+.main-logo:hover {
+  transform: scale(1.08) rotate(5deg);
+  box-shadow: 0 20px 50px rgba(15, 23, 42, 0.4);
+}
+
+.brand-text {
+  flex: 1;
+}
+
+.brand-text .section-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: white;
+  padding: 8px 16px;
+  border-radius: 25px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.brand-text .page-title {
+  font-size: 2.8rem;
+  font-weight: 800;
+  color: var(--text-primary);
+  margin-bottom: 15px;
+  line-height: 1.2;
+}
+
+.brand-text .page-subtitle {
+  font-size: 1.2rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  max-width: 600px;
 }
 .sidebar-header .sidebar-toggler,
 .sidebar-menu-button {
@@ -859,6 +918,32 @@ body::before {
     .grid-3,
     .grid-4 {
         grid-template-columns: 1fr;
+    }
+    
+    /* Mobile Logo Adjustments */
+    .header-brand {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+    
+    .main-logo {
+        width: 70px;
+        height: 70px;
+    }
+    
+    .brand-text .page-title {
+        font-size: 2.2rem;
+    }
+    
+    .brand-text .page-subtitle {
+        font-size: 1.1rem;
+    }
+    
+    /* Sidebar Logo Mobile */
+    .sidebar-header .header-logo img {
+        width: 50px;
+        height: 50px;
     }
 }
   
